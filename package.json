@@ -1,6 +1,6 @@
 {
   "name": "lambda-init",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Make AWS Lambda initialization easier with TypeScript/JavaScript",
   "license": "MIT",
   "homepage": "https://github.com/DManavi/lambda_init#readme",
