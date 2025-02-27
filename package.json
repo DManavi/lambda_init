@@ -1,0 +1,93 @@
+{
+  "name": "lambda-init",
+  "version": "0.0.0",
+  "description": "Make AWS Lambda initialization easier with TypeScript/JavaScript",
+  "license": "MIT",
+  "homepage": "https://github.com/DManavi/lambda_init#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DManavi/lambda_init.git"
+  },
+  "bugs": {
+    "url": "https://github.com/DManavi/lambda_init/issues"
+  },
+  "author": {
+    "name": "Danial Manavi",
+    "email": "me@dmanavi.com",
+    "url": "https://dmanavi.com"
+  },
+  "keywords": [
+    "lambda",
+    "aws-lambda",
+    "init",
+    "bootstrap",
+    "initialize",
+    "wrapper",
+    "async",
+    "async-lambda",
+    "typescript"
+  ],
+  "nx": {
+    "includedScripts": []
+  },
+  "pnpm": {
+    "ignoredBuiltDependencies": [
+      "@swc/core",
+      "esbuild",
+      "nx"
+    ]
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "peerDependencies": {
+    "debug": "^4.4.0",
+    "error-lib": "^2.0.2"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.8.0",
+    "@nx/eslint": "19.8.14",
+    "@nx/eslint-plugin": "19.8.14",
+    "@nx/js": "19.8.14",
+    "@nx/rollup": "19.8.14",
+    "@nx/vite": "19.8.14",
+    "@nx/web": "19.8.14",
+    "@nx/workspace": "19.8.14",
+    "@swc-node/register": "~1.9.1",
+    "@swc/core": "~1.5.7",
+    "@swc/helpers": "~0.5.11",
+    "@types/debug": "^4.1.12",
+    "@types/node": "18.16.9",
+    "@vitest/coverage-v8": "^1.0.4",
+    "@vitest/ui": "^1.3.1",
+    "debug": "^4.4.0",
+    "error-lib": "^2.0.2",
+    "eslint": "^9.8.0",
+    "eslint-config-prettier": "^9.0.0",
+    "jsonc-eslint-parser": "^2.4.0",
+    "nx": "19.8.14",
+    "prettier": "^2.6.2",
+    "tslib": "^2.3.0",
+    "tsup": "^8.4.0",
+    "typedoc": "^0.27.9",
+    "typescript": "~5.5.2",
+    "typescript-eslint": "^8.0.0",
+    "vite": "^5.0.0",
+    "vitest": "^1.3.1"
+  },
+  "type": "commonjs",
+  "main": "./index.cjs",
+  "module": "./index.mjs",
+  "typings": "./index.d.ts",
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "import": "./index.mjs",
+      "default": "./index.cjs"
+    },
+    "./*": {
+      "import": "./*.mjs",
+      "default": "./*.cjs"
+    }
+  }
+}

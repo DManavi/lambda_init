@@ -1,0 +1,41 @@
+{
+  "name": "lambda-init",
+  "$schema": "node_modules/nx/schemas/project-schema.json",
+  "includedScripts": [],
+  "sourceRoot": "src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "nx:run-commands",
+      "options": {
+        "parallel": false,
+        "commands": [
+          "tsup",
+          
+          "cp package.json dist/lambda_init/",
+          "cp README.md dist/lambda_init/",
+          "cp CHANGELOG.md dist/lambda_init/",
+          "cp LICENSE.md dist/lambda_init/",
+
+          "rm -rf dist/lambda_init/*.d.mts"
+        ]
+      }
+    },
+    "docs": {
+      "command": "typedoc src/"
+    },
+    "lint": {
+      "command": "eslint ./src ./package.json"
+    },
+    "test": {
+      "executor": "@nx/vite:test",
+      "outputs": [
+        "{options.reportsDirectory}"
+      ],
+      "options": {
+        "reportsDirectory": "coverage"
+      }
+    }
+  }
+}
