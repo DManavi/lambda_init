@@ -5,6 +5,7 @@
 **Initialize an AWS Lambda application once, then safely reuse it across invocations.**
 
 [![License: MIT](https://img.shields.io/github/license/DManavi/lambda_init?style=flat-square)](https://github.com/DManavi/lambda_init/blob/main/LICENSE.md)
+[![npm monthly downloads](https://img.shields.io/npm/dm/lambda-init?style=flat-square)](https://www.npmjs.com/package/lambda-init)
 [![GitHub stars](https://img.shields.io/github/stars/DManavi/lambda_init?style=flat-square)](https://github.com/DManavi/lambda_init)
 [![TypeScript](https://img.shields.io/badge/TypeScript-ready-3178C6?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 
